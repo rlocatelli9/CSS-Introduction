@@ -1,18 +1,33 @@
 /*adapted from FreeBootCamp*/
 
-.penguin {
+.penguin-one {
   /* change code below */
-  --penguin-skin: black;
+  --penguin-skin: gray;
   --penguin-belly: white;
   --penguin-beak: yellow;
   /* change code above */
 
   position: relative;
-  margin: auto;
+  margin: 20%;
   display: block;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 300px;
   height: 300px;
+}
+
+.penguin-two {
+  /* change code below */
+  --penguin-skin: black;
+  --penguin-belly: gray;
+  --penguin-beak: orange;
+  /* change code above */
+
+  position: relative;
+  margin: 50%;
+  display: block;
+  margin-top: 5%;
+  width: 500px;
+  height: 500px;
 }
 
 .penguin-top {
