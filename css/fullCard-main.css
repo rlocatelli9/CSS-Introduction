@@ -48,11 +48,11 @@ p {
   padding: 5px;
 }
 
-#linear-gradient {
+.linear-gradient {
   background: linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
-#repeating-linear-gradient {
+.repeating-linear-gradient {
   background: repeating-linear-gradient(
     90deg,
     yellow 0px,
@@ -60,4 +60,8 @@ p {
     green 40px,
     red 80px
   );
+}
+
+.url {
+  background: url(https://i.imgur.com/MJAkxbh.png);
 }
