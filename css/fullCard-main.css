@@ -1,9 +1,18 @@
+:root {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.divContent {
+  padding: 10px;
+}
+
 h4 {
   text-align: center;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   background-color: rgba(45, 45, 45, 0.1);
   font-size: 27px;
+  text-transform: uppercase;
 }
 p {
   text-align: justify;
@@ -11,17 +20,44 @@ p {
 .links {
   margin-right: 20px;
   text-align: left;
+  opacity: 0.7;
+}
+.links:hover {
+  color: blue;
 }
 #thumbnail {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.24);
 }
 .fullCard {
-  width: 245px;
+  /*width: 245px;*/
+  position: relative;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px 5px;
+  border-radius: 10px;
+  margin: 0px 12px 2px 0px;
   padding: 4px;
+  background: linear-gradient(
+    35deg,
+    rgba(161, 227, 243, 0.788),
+    rgba(211, 160, 198, 0.788)
+  );
+  float: left;
+  width: 270px;
+  height: 440px;
 }
 .cardContent {
-  padding: 10px;
+  padding: 5px;
+}
+
+#linear-gradient {
+  background: linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+#repeating-linear-gradient {
+  background: repeating-linear-gradient(
+    90deg,
+    yellow 0px,
+    blue 40px,
+    green 40px,
+    red 80px
+  );
 }
