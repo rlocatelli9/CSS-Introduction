@@ -13,6 +13,20 @@
   margin-top: 10%;
   width: 300px;
   height: 300px;
+
+  animation-name: jump;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jump {
+  50% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 20px;
+  }
 }
 
 .penguin-two {
