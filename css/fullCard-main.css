@@ -29,11 +29,10 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.24);
 }
 .fullCard {
-  /*width: 245px;*/
   position: relative;
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin: 0px 12px 2px 0px;
+  margin: 0px 12px 10px 0px;
   padding: 4px;
   background: linear-gradient(
     35deg,
@@ -44,6 +43,7 @@ p {
   width: 270px;
   height: 440px;
 }
+
 .cardContent {
   padding: 5px;
 }
@@ -52,16 +52,147 @@ p {
   background: linear-gradient(0.5turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
+.linear-gradient:hover {
+  transform: scale(1.2);
+}
+
 .repeating-linear-gradient {
   background: repeating-linear-gradient(
-    90deg,
+    45deg,
     yellow 0px,
-    blue 40px,
-    green 40px,
-    red 80px
+    yellow 40px,
+    black 40px,
+    black 80px
   );
+}
+
+.repeating-linear-gradient:hover {
+  transform: skewY(12deg);
 }
 
 .url {
   background: url(https://i.imgur.com/MJAkxbh.png);
+}
+.url:hover {
+  transform: skewX(5deg);
+}
+
+.cardShadowGreen {
+  background: repeating-linear-gradient(
+    0deg,
+    yellow 0px,
+    green 40px,
+    white 40px,
+    blue 80px
+  );
+  box-shadow: 25px 10px 5px 10px green !important;
+}
+
+.cardShadowGreen:hover {
+  filter: opacity(50%);
+}
+
+.heart {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  20% {
+    transform: scale(1.2) rotate(-45deg);
+  }
+  30% {
+    transform: scale(1.4) rotate(-45deg);
+  }
+  20% {
+    transform: scale(1.6) rotate(-45deg);
+  }
+  30% {
+    transform: scale(1.8) rotate(-45deg);
+  }
+}
+
+.heart::after {
+  background-color: red;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+.heart::before {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+
+.baralho {
+  background: white !important;
+  margin-left: 40px !important;
+}
+
+.carta {
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  /*box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5); só pra teste*/
+}
+
+.naip-area {
+  height: 50%;
+  width: 100%;
+}
+
+.naip-area:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+.naip-number,
+.naip-sign {
+  display: block;
+  width: 30px;
+  text-align: center;
+}
+
+.naip-number {
+  font-size: 45px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+.naip-sign {
+  font-size: 40px;
+}
+
+.carta-miolo {
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+
+/*--------- Miolo 1 -----------*/
+.miolo-1 {
+  text-align: center;
+  line-height: 410px;
+  font-size: 120px;
 }
